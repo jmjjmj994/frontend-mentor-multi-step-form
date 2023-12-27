@@ -1,0 +1,13 @@
+{
+  "name": "frontend-mentor-multi-step-form",
+  "version": "1.0.0",
+  "description": "Frontend Mentor challenge - Multi Step Form",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npm install "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    input, select, textarea {
+        font: inherit;
+    }
+  .body-grid {
+    font-family: "Ubuntu", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr 5rem;
+  }
+
+  .sidebar {
+    background-image: url(/src/assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+
+
+  .article-padding {
+    padding-inline: 17px;
+  }
+
+  .move {
+    transform: translateY(-60px);
+  }
+}
