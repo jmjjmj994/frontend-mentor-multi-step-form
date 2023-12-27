@@ -27,4 +27,11 @@
   .move {
     transform: translateY(-60px);
   }
+
+  .article-hidden {
+    display: none;
+  }
+  .article-display {
+    display: block;
+  }
 }

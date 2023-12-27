@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/output.css">
-    <title>Document</title>
+    <title>Component</title>
 </head>
 
 <body class="body-grid min-h-[100vh]">
@@ -32,12 +32,12 @@
         </ul>
     </nav>
 
-    <section class="bg-primary px-4">
+    <section data-type-section="content-container" class="bg-primary px-4">
 
 
 
-        <!-- 
-        <article class="article-padding py-[28px] bg-white move rounded-md shadow-sm">
+   
+        <article data-type-section="register" class="article-padding py-[28px] bg-white move rounded-md shadow-sm article-hidden">
             <h2 class="text-2xl font-ubuntu font-bold text-marine-blue pb-3">Personal info</h2>
             <p class="pb-2 text-cool-gray font-medium">Please provide your name, email address, and phone number.</p>
             <form action="" class="flex flex-col gap-5  pt-5 text-marine-blue text-sm font-bold">
@@ -63,10 +63,10 @@
 
 
 
-        </article> -->
+        </article> 
 
 
-        <!--     <article class="article-padding py-[28px] bg-white move rounded-md shadow-sm">
+            <article  data-type-section="plan" class="article-padding py-[28px] bg-white move rounded-md shadow-sm article-hidden">
             <h2 class="text-2xl font-ubuntu font-bold text-marine-blue pb-1">Select your plan</h2>
             <p class="pb-5 text-cool-gray font-medium">You have the option of monthly or yearly billing.</p>
 
@@ -119,9 +119,9 @@
             </div>
 
 
-        </article> -->
-        <!-- 
-        <article class="article-padding py-[28px] bg-white move rounded-md shadow-sm">
+        </article> 
+    
+        <article  data-type-section="add-ons" class="article-padding py-[28px] bg-white move rounded-md shadow-sm article-hidden">
             <h2 class="text-2xl font-ubuntu font-bold text-marine-blue pb-1">Pick add-ons</h2>
             <p class="pb-5 text-cool-gray font-medium">Add-ons help enhance your gaming experience.</p>
             <div class="border border-1 mb-4 py-3 px-3 flex justify-between items-center rounded-md">
@@ -172,9 +172,9 @@
 
 
 
-        </article> -->
+        </article> 
 
-        <!--        <article class="article-padding py-[28px] bg-white move rounded-md shadow-sm">
+         <article  data-type-section="confirmation" class="article-padding py-[28px] bg-white move rounded-md shadow-sm article-hidden">
             <h2 class="text-2xl font-ubuntu font-bold text-marine-blue pb-1">Finishing up</h2>
             <p class="pb-5 text-cool-gray font-medium">Please review everything to ensure it appears correct before
                 finalizing your confirmation.</p>
@@ -213,15 +213,15 @@
                 <p class="text-sm font-bold text-purplish-blue">+$12/mo</p>
             </div>
 
-        </article> -->
+        </article> 
 
 
     </section>
 
 
-    <div class="flex justify-between items-center article-padding"> <!--Buttons-->
-        <button class="text-cool-gray font-bold text-sm">Go Back</button>
-        <button class="bg-purplish-blue px-4 py-2 text-white text-sm font-bold rounded-md">Confirm</button>
+    <div data-type-pagination="button-container" class=""> <!--Buttons-->
+        <a data-type-pagination="prev" class="text-cool-gray font-bold text-sm cursor-pointer" role="button">Go Back</a>
+        <a data-type-pagination="next" class="bg-purplish-blue px-4 py-2 text-white text-sm cursor-pointer font-bold rounded-md" role="button"></a>
     </div>
 
     <script src="/src/js/script.js"></script>
